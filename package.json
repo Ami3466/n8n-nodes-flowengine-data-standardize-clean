@@ -14,14 +14,14 @@
 		"flowengine"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/AiGptCode/n8n-nodes-flowengine-data-cleaner",
+	"homepage": "https://github.com/Ami3466/-n8n-nodes-flowengine-data-cleaner",
 	"author": {
 		"name": "FlowEngine",
 		"email": "support@flowengine.io"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/AiGptCode/n8n-nodes-flowengine-data-cleaner.git"
+		"url": "https://github.com/Ami3466/-n8n-nodes-flowengine-data-cleaner.git"
 	},
 	"engines": {
 		"node": ">=18.10",
@@ -30,12 +30,11 @@
 	"packageManager": "pnpm@9.1.4",
 	"main": "dist/nodes/DataCleaner/DataCleaner.node.js",
 	"scripts": {
-		"preinstall": "npx only-allow pnpm",
 		"build": "tsc && gulp build:icons",
 		"dev": "tsc --watch",
 		"format": "prettier nodes --write",
 		"lint": "eslint nodes --ext .ts --fix",
-		"prepublishOnly": "pnpm build"
+		"prepublishOnly": "npm run build"
 	},
 	"files": [
 		"dist"
