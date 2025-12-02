@@ -277,7 +277,7 @@ export function toSnakeCase(str: string): string {
 		// Insert underscore before sequences of uppercase followed by lowercase
 		.replace(/([A-Z]+)([A-Z][a-z])/g, '$1_$2')
 		// Replace spaces, hyphens, dots with underscores
-		.replace(/[\s\-\.]+/g, '_')
+		.replace(/[\s\-.]+/g, '_')
 		// Remove non-alphanumeric characters except underscores
 		.replace(/[^a-zA-Z0-9_]/g, '')
 		// Convert to lowercase
@@ -300,7 +300,7 @@ export function toCamelCase(str: string): string {
 
 	return str
 		// Replace special characters with spaces for word boundary detection
-		.replace(/[_\-\.\s]+/g, ' ')
+		.replace(/[_\-.\s]+/g, ' ')
 		// Trim and lowercase
 		.trim()
 		.toLowerCase()
@@ -365,8 +365,6 @@ export function cleanPhoneNumber(
 	if (digitsOnly.length > 15) {
 		return phone; // Return original if too long
 	}
-
-	let normalizedNumber = digitsOnly;
 
 	// Check if number already has a country code
 	if (hasPlus) {
@@ -437,7 +435,7 @@ export function normalizeEmail(email: string): string {
 	}
 
 	// Trim whitespace and convert to lowercase
-	let normalized = email.trim().toLowerCase();
+	const normalized = email.trim().toLowerCase();
 
 	// Basic validation: must contain @ and at least one character on each side
 	const atIndex = normalized.indexOf('@');
@@ -873,7 +871,7 @@ export function parseUsername(username: string): ParsedName {
 	}
 
 	// Remove common prefixes/suffixes in usernames
-	let cleaned = username
+	const cleaned = username
 		.replace(/^[@#]/g, '') // Remove @ or # prefix
 		.replace(/[0-9]+$/g, ''); // Remove trailing numbers
 
@@ -882,7 +880,7 @@ export function parseUsername(username: string): ParsedName {
 
 	if (cleaned.includes('_') || cleaned.includes('.') || cleaned.includes('-')) {
 		// Separator-based username (john_doe, john.doe, john-doe)
-		parts = cleaned.split(/[_.\-]+/).filter(p => p.length > 0);
+		parts = cleaned.split(/[_.-]+/).filter(p => p.length > 0);
 	} else {
 		// CamelCase or concatenated (JohnDoe, johndoe)
 		// Try to split on case changes
@@ -1232,7 +1230,7 @@ export function formatText(text: string, options: FormatTextOptions = {}): strin
 
 	// Remove punctuation if requested
 	if (options.removePunctuation) {
-		result = result.replace(/[.,!?;:'"()\[\]{}]/g, '');
+		result = result.replace(/[.,!?;:'"()[\]{}]/g, '');
 	}
 
 	// Apply case conversion
