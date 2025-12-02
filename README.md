@@ -1,4 +1,4 @@
-# n8n-nodes-flowengine-data-cleaner
+# n8n-nodes-flowengine-data-standardize-clean
 
 **Stop writing Code Nodes to clean your data. Use this.**
 
@@ -28,14 +28,14 @@ You're building automations in n8n, and your data is a mess:
 
 1. Go to **Settings** > **Community Nodes**
 2. Select **Install**
-3. Enter `n8n-nodes-flowengine-data-cleaner`
+3. Enter `n8n-nodes-flowengine-data-standardize-clean`
 4. Click **Install**
 
 ### Manual Installation
 
 ```bash
 # In your n8n installation directory
-pnpm install n8n-nodes-flowengine-data-cleaner
+pnpm install n8n-nodes-flowengine-data-standardize-clean
 ```
 
 ## Operations
@@ -205,7 +205,7 @@ pnpm format
 pnpm link --global
 
 # In your n8n installation
-pnpm link --global n8n-nodes-flowengine-data-cleaner
+pnpm link --global n8n-nodes-flowengine-data-standardize-clean
 
 # Start n8n
 n8n start
@@ -221,7 +221,7 @@ Contributions are welcome! Please read our contributing guidelines and submit PR
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/Ami3466/-n8n-nodes-flowengine-data-cleaner/issues)
+- **Issues**: [GitHub Issues](https://github.com/Ami3466/n8n-nodes-flowengine-data-standardize-clean/issues)
 - **Documentation**: [n8n Community Nodes Docs](https://docs.n8n.io/integrations/community-nodes/)
 
 ---

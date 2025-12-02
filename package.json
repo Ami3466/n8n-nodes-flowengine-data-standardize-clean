@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-flowengine-data-standardize-clean",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A production-ready n8n Community Node for cleaning and transforming data without code. Includes fuzzy deduplication, phone/name/address parsing, text extraction, formatting, type conversion, and more.",
 	"keywords": [
 		"n8n-community-node-package",
