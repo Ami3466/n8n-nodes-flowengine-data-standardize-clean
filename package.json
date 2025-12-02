@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-flowengine-data-standardize-clean",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A production-ready n8n Community Node for cleaning and transforming data without code. Includes fuzzy deduplication, phone/name/address parsing, text extraction, formatting, type conversion, and more.",
 	"keywords": [
 		"n8n-community-node-package",
@@ -17,14 +17,14 @@
 		"flowengine"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/Ami3466/-n8n-nodes-flowengine-data-cleaner",
+	"homepage": "https://github.com/Ami3466/n8n-nodes-flowengine-data-standardize-clean",
 	"author": {
 		"name": "FlowEngine",
-		"email": "support@flowengine.io"
+		"email": "support@flowengine.cloud"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Ami3466/-n8n-nodes-flowengine-data-cleaner.git"
+		"url": "https://github.com/Ami3466/n8n-nodes-flowengine-data-standardize-clean.git"
 	},
 	"engines": {
 		"node": ">=18.10",
